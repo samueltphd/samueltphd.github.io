@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Sam Thomas</title>
-  </head>
-  <body>
 
+    <style media="screen">
+      body {
+        font-family: Helvetica, serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      .wrapper {
+        padding: 1%;
+        display: grid;
+        grid-template-columns: 15% 65% 20%;
+      }
+
+      header {
+        background: #203647;
+        color: #EEFBFB;
+        font-size: 30pt;
+        text-align: center;
+      }
+
+      .subheader {
+        font-size: 14pt;
+        font-style: italic;
+      }
+
+      .contactinfo {
+        text-align: center;
+        font-size: 10pt;
+      }
+
+      #headshot {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+
+      #rightimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+        height: 200px;
+      }
+
+      .left {
+        background: #007CC7;
+        color: #EEFBFB;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      .middle {
+        background: #EEFBFB;
+        color: #12232E;
+        padding: 2%;
+      }
+
+      .right {
+        background: #4DA8DA;
+        color: #203647;
+      }
+
+      footer {
+        text-align: center;
+        background: #203647;
+        color: #EEFBFB;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>Sam Thomas</div>
+      <div class="subheader">Doctoral Student</div>
+      <div class="subheader">Brown University</div>
+    </header>
+
+    <div class="wrapper">
+      <!-- left pane -->
+      <div class="left">
+        <img id="headshot" src="headshot.png"></img>
+        <div class="contactinfo"><a href="mailto:samuel_thomas@brown.edu">samuel_thomas@brown.edu</a></div>
+
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Publications</a></li>
+          <li><a href="">Research</a></li>
+        </ul>
+      </div>
+      <!-- main pane -->
+      <div class="middle">
+        <h3>Overview</h3>
+        <p>I am a first year doctoral student at Brown University under the advisory of R. Iris Bahar. I am currently working in the area of computer architecture and systems, with a focus on security in terms of new technologies. I have previous experience working with parallel algorithms and data structures for NUMA.</p>
+        <p>I graduated from Davidson College in the spring of 2020 with a B.S. in Computer Science with High Honors. I also majored in Political Science.</p>
+      </div>
+      <!-- right pane -->
+      <div class="right">
+        <img id="rightimg" src="Brown.png"></img>
+        <img id="rightimg" src="Davidson.jpg"></img>
+      </div>
+    </div>
+
+    <footer>
+      Be sure to check out some of my work on <a href="https://www.github.com/samueltphd">Github</a> and, if you are so incline, follow me on social media!
+
+      <ul>
+        <li><a href="https://www.twitter.com/amthoma33">Twitter</a></li>
+        <li><a href="https://www.facebook.com/sam.thomas.12327">Facebook</a></li>
+        <li><a href="https://www.instagram.com/amthoma33">Instagram</a></li>
+      </ul>
+
+      Also, be sure to check out other work by other Brown University students: <a href="https://cs.brown.edu/people/grad/">https://cs.brown.edu/people/grad/</a>. Thanks!
+    </footer>
   </body>
 </html>
