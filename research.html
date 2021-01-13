@@ -83,6 +83,10 @@
         background: #203647;
         color: #EEFBFB;
       }
+
+      #topic {
+        margin-top: 40px;
+      }
     </style>
   </head>
 
@@ -100,19 +104,24 @@
         <div class="contactinfo"><a href="mailto:samuel_thomas@brown.edu">samuel_thomas@brown.edu</a></div>
 
         <ul>
-          <li><a href="">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="publications.html">Publications</a></li>
-          <li><a href="research.html">Research</a></li>
+          <li><a href="">Research</a></li>
         </ul>
       </div>
       <!-- main pane -->
       <div class="middle">
-        <h2>Overview</h2>
-        <p>I am a first year doctoral student at Brown University under the advisory of R. Iris Bahar. I am currently working in the area of computer architecture and systems, with a focus on security in terms of new technologies. I have previous experience working with parallel algorithms and data structures for NUMA.</p>
-        <p>I graduated from Davidson College in the spring of 2020 with a B.S. in Computer Science with High Honors. I also majored in Political Science.</p>
-        <p>Some of my pre- and post-pandemic hobbies include playing disc golf and going to sporting events. I am affiliate with all Boston sports teams (sorry), and am also a big fan of Liverpool FC. I also very avidly support Davidson College sports - as a fan, member of the <a href="https://www.twitter.com/catsstats">Cats Stats</a> group, and (most importantly) as an alumni member of the pep band where I play saxophone.</p>
-        <p>During the pandemic, I spent some time developing a "Couch to Developer" course for people with no programming experience, so that they could put a website (like this one) together in five, two-hour sessions. We also went over skills like web-scraping and basic data science techniques.</p>
-        <p>Click <a href="cv.pdf">here</a> to download a copy of my CV, but I cannot promise that it is up-to-date. At the time of writing, it reflects my CV for applying to graduate school.</p>
+        <h2>Research</h2>
+        <ul>
+          <li id="topic">
+            <p><b>Hardware-Software Co-Design</b></p>
+            <p>With the rise of emerging technologies, such as non-volatile memories and near-data processing, state-of-the-art systems will soon be able to benefit from novel properties like memory persistence and fast data access rates. In my current work, I am exploring both of these areas to explicitly define these benefits, as well as coming up with solutions that encompass them. Current projects in this area include exploring the use of NDP to perform tasks with high cache-miss rates, and what the corresponding architecture might look like. I am also exploring security protocols for NVMs, and protocols to ensure that they are safe for use without compromising on the benefits that they promise.</p>
+          </li>
+          <li id="topic">
+            <p><b>Hardware-Aware Software and Parallel Algorithms</b></p>
+            <p>As an undergrad, I worked on building a novel data structure that was particularly well equipped for NUMA architectures. That is, we modified a data structure called a "skip graph," which is a skip list variant, such that it could be configured to support an optimal partition of data across NUMA nodes. That is, for a thread operating in a particular NUMA node, it would first access data local to that node and access the minimal possible remote data, while still having data evenly distributed throughout the system. In so doing, we developed a novel scheme of garbage collection for the system, and discovered that the system lent itself particularly well to the development of a fast priority queue approximation algorithm that is both faster and predicts keys closer to the true minimum than its leading competitors. For more details about this work, you can find and download my undergrad thesis on <a href="https://github.com/samueltphd/DavidsonThesis/blob/master/thesis.pdf">my Github</a>.</p>
+          </li>
+        </ul>
       </div>
       <!-- right pane -->
       <div class="right">

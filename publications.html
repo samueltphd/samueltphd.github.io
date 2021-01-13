@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sam Thomas</title>
+
+    <style media="screen">
+      body {
+        font-family: Helvetica, serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      .wrapper {
+        padding: 1%;
+        display: grid;
+        grid-template-columns: 15% 65% 20%;
+      }
+
+      header {
+        background: #203647;
+        color: #EEFBFB;
+        font-size: 30pt;
+        text-align: center;
+      }
+
+      .subheader {
+        font-size: 14pt;
+        font-style: italic;
+      }
+
+      .contactinfo {
+        text-align: center;
+        font-size: 10pt;
+      }
+
+      #headshot {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        border-radius: 25%;
+      }
+
+      #rightimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+        height: 200px;
+      }
+
+      .left {
+        background: #007CC7;
+        color: #EEFBFB;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .middle {
+        background: #EEFBFB;
+        color: #12232E;
+        padding: 2%;
+      }
+
+      .right {
+        background: #4DA8DA;
+        color: #203647;
+      }
+
+      footer {
+        text-align: center;
+        background: #203647;
+        color: #EEFBFB;
+      }
+
+      #publication {
+        margin-top: 40px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>Sam Thomas</div>
+      <div class="subheader">Doctoral Student</div>
+      <div class="subheader">Brown University</div>
+    </header>
+
+    <div class="wrapper">
+      <!-- left pane -->
+      <div class="left">
+        <img id="headshot" src="Headshot.png"></img>
+        <div class="contactinfo"><a href="mailto:samuel_thomas@brown.edu">samuel_thomas@brown.edu</a></div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Publications</a></li>
+          <li><a href="research.html">Research</a></li>
+        </ul>
+      </div>
+      <!-- main pane -->
+      <div class="middle">
+        <h2>Publications</h2>
+        <ul>
+          <li id="publication">
+            <p><b>IEEE SBAC-PAD '20</b></p>
+            <a href="https://ieeexplore.ieee.org/document/9235081">Thomas, Samuel & Hayne, Roxana & Pulaj, Jonad & Mendes, Hammurabi. (2020). Using Skip Graphs for Increased NUMA Locality. 157-166. 10.1109/SBAC-PAD49847.2020.00031.</a>
+            <p>Abstract. High-performance simulations and parallel frameworks often rely on highly scalable, concurrent data structures for system scalability. With an increased availability of NUMA architectures, we present a technique to promote NUMA-aware data parallelism inside a concurrent data structure, bringing significant quantitative and qualitative improvements on NUMA locality, as well as reduced contention for synchronized memory accesses. Our architecture is based on a data-partitioned, concurrent skip graph indexed by thread-local sequential maps. We implemented maps and relaxed priority queues using such technique. Maps show up to 6x higher CAS locality, up to a 68.6% reduction on the number of remote CAS operations, and an increase from 88.3% to 99% on the CAS success rate compared to a control implementation (subject to the same optimizations, and implementation practices). Remote memory accesses are not only reduced in number, but the larger the NUMA distance between threads, the larger the reduction is. Relaxed priority queues implemented using our technique show similar scalability improvements, with provable reduction in contention and decrease in relaxation in one of our implementations.</p>
+          </li>
+          <li id="publication">
+            <p><b>ACM PODC '19, short paper</b></p>
+            <a href="https://dl.acm.org/doi/10.1145/3293611.3331576">Samuel Thomas and Hammurabi Mendes. 2019. Layering Data Structures over Skip Graphs for Increased NUMA Locality. In Proceedings of the 2019 ACM Symposium on Principles of Distributed Computing (PODC '19). Association for Computing Machinery, New York, NY, USA, 422–424. DOI:https://doi.org/10.1145/3293611.3331576</a>
+            <p>Abstract. We present a lock-free, linearizable, and NUMA-aware data structure that implements sets, maps, and priority queue abstract data types (ADTs), based on using thread-local, sequential maps that are used to "jump" to suitable positions in a lock-free, linearizable variant of a skip graph. Our skip graph is suitably constrained in height and subjected to a data partition scheme that reduces contention and increases NUMA locality. We developed an additional skip graph variant, which we call sparse skip graph, that causes our thread-local maps as well as our shared structure to become more sparse. Compared to using regular skip graphs, sparse skip graphs show increased performance in workloads dominated by "insert" or "remove" operations, and comparable performance in workloads dominated by "contains" operations.</p>
+          </li>
+        </ul>
+      </div>
+      <!-- right pane -->
+      <div class="right">
+        <img id="rightimg" src="Brown.png"></img>
+        <img id="rightimg" src="Davidson.jpg"></img>
+      </div>
+    </div>
+
+    <footer>
+      Be sure to check out some of my work on <a href="https://www.github.com/samueltphd">Github</a> and, if you are so incline, follow me on social media!
+
+      <ul>
+        <li><a href="https://www.twitter.com/amthoma33">Twitter</a></li>
+        <li><a href="https://www.facebook.com/sam.thomas.12327">Facebook</a></li>
+        <li><a href="https://www.instagram.com/amthoma33">Instagram</a></li>
+      </ul>
+
+      Also, be sure to check out other work by other Brown University students: <a href="https://cs.brown.edu/people/grad/">https://cs.brown.edu/people/grad/</a>. Thanks!
+    </footer>
+  </body>
+</html>
