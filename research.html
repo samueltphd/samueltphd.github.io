@@ -111,15 +111,19 @@
       </div>
       <!-- main pane -->
       <div class="middle">
-        <h2>Research</h2>
+        <h2>Research Interests</h2>
         <ul>
           <li id="topic">
-            <p><b>Hardware-Software Co-Design</b></p>
-            <p>With the rise of emerging technologies, such as non-volatile memories and near-data processing, state-of-the-art systems will soon be able to benefit from novel properties like memory persistence and fast data access rates. In my current work, I am exploring both of these areas to explicitly define these benefits, as well as coming up with solutions that encompass them. Current projects in this area include exploring the use of NDP to perform tasks with high cache-miss rates, and what the corresponding architecture might look like. I am also exploring security protocols for NVMs, and protocols to ensure that they are safe for use without compromising on the benefits that they promise.</p>
+            <p><b>Secure Memory</b></p>
+            <p>A property of increasingly dense memory devices is that they are increasingly susceptible to corruption based attacks, with limited access to the device and without access permissions. As a result, devices can implement secure memory, a protocol that implements a Bonsai Merkle Tree and uses it to authenticate that values aren't corrupted between when they are stored in memory and the next time they are loaded. Unfortunately, this protocol is too slow to be useful in practice. Emerging memory technologies and use cases provide interesting opportunities and challenges for this protocol.</p>
           </li>
           <li id="topic">
-            <p><b>Hardware-Aware Software and Parallel Algorithms</b></p>
-            <p>As an undergrad, I worked on building a novel data structure that was particularly well equipped for NUMA architectures. That is, we modified a data structure called a "skip graph," which is a skip list variant, such that it could be configured to support an optimal partition of data across NUMA nodes. That is, for a thread operating in a particular NUMA node, it would first access data local to that node and access the minimal possible remote data, while still having data evenly distributed throughout the system. In so doing, we developed a novel scheme of garbage collection for the system, and discovered that the system lent itself particularly well to the development of a fast priority queue approximation algorithm that is both faster and predicts keys closer to the true minimum than its leading competitors. For more details about this work, you can find and download my undergrad thesis on <a href="https://github.com/samueltphd/DavidsonThesis/blob/master/thesis.pdf">my Github</a>.</p>
+            <p><b>Computational Memory Devices</b></p>
+            <p>Near-memory processing, near-memory compute, processing-in memory, processing-using memory, computational storage devices, etc are all emerging trends in memory that promise high memory bandwidth. Yet, despite the opporunities of co-design applications with the device, their utility may be limited due their value in terms of breadth of use cases, programming model (i.e., coherence), and their generality comes at the cost of implementing on bare metal. I believe there are still interesting opportunities with these technologies, and that their appeal is grounded in legitimate observations from classical computing architectures.</p>
+          </li>
+          <li id="topic">
+            <p><b>Hardware-Aware Software and Concurrent Algorithms</b></p>
+            <p>Persistent memories and non-uniform memories have provided difficult challenges in terms of concurrent data structure access patters. For example, without explicitly persisting values, a concurrent data structure will remain crash inconsistent. Furthermore, naive placement of data will lead to suboptimal performance for applications using far memory. If these applications are made architecture-aware, however, there can also be significant improvements.</p>
           </li>
         </ul>
       </div>
@@ -131,13 +135,7 @@
     </div>
 
     <footer>
-      Be sure to check out some of my work on <a href="https://www.github.com/samueltphd">Github</a> and, if you are so incline, follow me on social media!
-
-      <ul>
-        <li><a href="https://www.twitter.com/amthoma33">Twitter</a></li>
-        <li><a href="https://www.facebook.com/sam.thomas.12327">Facebook</a></li>
-        <li><a href="https://www.instagram.com/amthoma33">Instagram</a></li>
-      </ul>
+      Be sure to check out some of my work on <a href="https://www.github.com/samueltphd">Github</a>.
 
       Also, be sure to check out other work by other Brown University students: <a href="https://cs.brown.edu/people/grad/">https://cs.brown.edu/people/grad/</a>. Thanks!
     </footer>
