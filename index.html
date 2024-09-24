@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sam Thomas</title>
+
+    <style media="screen">
+
+      a {
+        color: inherit;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      .wrapper {
+        padding: 1%;
+        display: grid;
+        grid-template-columns: 15% 82%;
+      }
+
+      header {
+        background: #203647;
+        color: #EEFBFB;
+        font-size: 30pt;
+        text-align: center;
+      }
+
+      .subheader {
+        font-size: 14pt;
+        font-style: italic;
+      }
+
+      .contactinfo {
+        text-align: left;
+        font-size: 10pt;
+      }
+
+      #headshot {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        border-radius: 5%;
+      }
+
+      .left {
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .middle {
+        background: #EEFBFB;
+        color: #12232E;
+        padding: 2%;
+      }
+
+      footer {
+        text-align: center;
+        background: #203647;
+        color: #EEFBFB;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+  <div class="wrapper">
+    <!-- left pane -->
+    <div class="left">
+      <img id="headshot" src="headshot0924.jpg" style="margin-bottom=5px;"><center>Samuel Thomas</center></img>
+
+      <center style="font-size:10pt;margin:1%;padding:2px;background:#DCDCDC;border-radius:5%;">
+        <div class="contactinfo">
+          <p>CV: <a href="/resources/cv.pdf" style="text-decoration:none;color:purple">[pdf]</a></p>
+          <p><a href="mailto:samuel_thomas@brown.edu" style="text-decoration:none;"><i class="fa fa-envelope"></i> samuel_thomas at brown dot edu</a></p>
+          <p><a href="https://github.com/samueltphd" style="text-decoration:none;"><i class="fa fa-github"></i> GitHub</a></p>
+          <p><a href="https://www.linkedin.com/in/samuel-thomas-a7243a102/" style="text-decoration:none;"><i class="fa fa-linkedin"></i> LinkedIn</a></p>
+          <p><a href="https://scholar.google.com/citations?user=Hv9wU6UAAAAJ&hl=en" style="text-decoration:none;"><i class="fa fa-graduation-cap"></i> Google Scholar</a></p>
+        </div>
+      </center>
+
+      <div class="navigation" style="position:fixed;margin:1%;padding:2px;border-radius:5%;">
+        <li><a href="">Home</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#service">Service</a></li>
+      </div>
+    </div>
+
+
+    <!-- middle pane -->
+    <div class="middle" style="font-family:Vernada,serif;">
+      <h2>About Me</h2>
+
+      <p>I am currently on the academic job market for faculty positions in Computer Science! My application materials and references are available upon request.</p>
+
+      <p>Sam Thomas is a fifth-year Ph.D. candidate. He is expected to graduate in the spring of 2025 from the Department of Computer Science at <a href="https://cs.brown.edu/" style="">Brown University</a>, advised by <a href="https://cs.mines.edu/project/bahar-iris/">R. Iris Bahar</a>. His dissertation is titled <i><a href="/resources/theses/dissertation-proposal.pdf" style="text-decoration:none;">Practical Secure Memory for Modern Deployments</a></i>. Prior to Brown, Sam received his Bachelors from Davidson College, where he majored in Computer Science (High Honors) and Political Science. His undergraduate thesis is titled <i><a href="/resources/theses/davidson-thesis.pdf" style="text-decoration:none;">Using Layering and Partitioning Techniques to Increase NUMA-Locality and Performance in Concurrent Data Structures</a></i>.</p>
+
+      <p>Sam's research interests are security, computer architecture, emerging technologies, hardware-software co-design, concurrent programming, and sustainable computing. His dissertation work studies security of memory devices. This work expands on prior literature in computer architecture, operating systems, theoretical data structure design and analysis, and distributed systems.</p>
+
+      <div id="publications">
+        <center><h2>Selected Publications <a href="/publication-list.html">(full list)</a></h2></center>
+
+        <div><b>Secure Memory</b><br>
+          <!-- AMNT -->
+          <p>
+            <a style="float:left;background-color:#b3e2cd;">[ASPLOS 2024]</a><a href="https://dl.acm.org/doi/10.1145/3620666.3651354" style="float:left;background-color:#fdcdac;">[paper]</a> <a href="https://zenodo.org/records/10775190" style="float:left;background-color:#cbd5e8;">[code]</a><a href="/publications/1/amnt.bib" style="color:purple;text-decoration:none;">[bib]</a><br>
+            <p>
+              <u>A Midsummer Night's Tree: Efficient and High Performance Secure SCM</u><br>
+              <b>Samuel Thomas</b>, Kidus Workneh, Jac McCarty, Joseph Izraelevitz, Tamara Lehman, R. Iris Bahar<br>
+              <i>ACM International Conference on Architectural Support for Programming Languages and Operating Systems, 2024.</i>
+            </p>
+          </p>
+
+          <!-- Baobab -->
+          <p>
+            <a style="float:left;background-color:#b3e2cd;">[IEEE CAL]</a><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10417116" style="float:left;background-color:#fdcdac;">[paper]</a><a href="/publications/2/baobab.bib" style="color:purple;text-decoration:none;">[bib]</a><br>
+            <p>
+              <u>Baobab Merkle Tree for Efficient Secure Memory</u><br>
+              <b>Samuel Thomas</b>, Kidus Workneh, Ange-Thierry Ishimwe, Zack McKevitt, Phaedra Curlin, R. Iris Bahar, Joseph Izraelevitz, Tamara Lehman<br>
+              <i>IEEE Computer Architecture Letters, 2024.</i>
+            </p>
+          </p>
+
+          <!-- Cordelia -->
+          <p>
+            <a style="float:left;background-color:#b3e2cd;">[HPCA 2025*]</a><a style="float:left;background-color:#fdcdac;">[paper coming soon!]</a><br>
+            <p>
+              <u>*name redacted for anonymity*</u><br>
+              <b>Samuel Thomas</b>, Eliott Dinfotan, Hammad Izhar, Gal Sela, Fadi Kidess, Tali Moreshet, Maurice Herlihy, R. Iris Bahar<br>
+              <i>Under submission.</i>
+            </p>
+          </p>
+
+          <!-- CAPULET -->
+          <p>
+            <a style="float:left;background-color:#b3e2cd;">[ASPLOS 2025*]</a><a style="float:left;background-color:#fdcdac;">[paper coming soon!]</a><br>
+            <p>
+              <u>*name redacted for anonymity*</u><br>
+              <b>Samuel Thomas</b>, Tamara Lehman, R. Iris Bahar<br>
+              <i>Under submission.</i>
+            </p>
+          </p>
+
+        </div><br>
+
+        <div><b>Concurrent Data Structures</b><br>
+          <!-- SBAC-PAD -->
+          <p>
+            <a style="float:left;background-color:#b3e2cd;">[IEEE SBAC-PAD]</a><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9235081" style="float:left;background-color:#fdcdac;">[paper]</a><a href="/publications/3/sbac-pad.bib" style="color:purple;text-decoration:none;">[bib]</a><br>
+            <p>
+              <u>Using Skip Graphs for Increased Locality</u><br>
+              <b>Samuel Thomas</b>, Roxana Hayne, Jonad Pulaj, Hammurabi Mendes<br>
+              <i>IEEE International Symposium on Computer Architecture and High Performance Computing, 2020.</i>
+            </p>
+          </p>
+
+          <!-- PODC Brief Announcement -->
+          <p>
+            <a style="float:left;background-color:#b3e2cd;">[PODC 2019]</a><a href="https://dl.acm.org/doi/pdf/10.1145/3293611.3331576" style="float:left;background-color:#fdcdac;">[paper]</a><a href="/publications/4/podc-ba.bib" style="color:purple;text-decoration:none;">[bib]</a><br>
+            <p>
+              <u>Brief Announcement: Layering Data Structures Over Skip Graphs for Increased NUMA Locality</u><br>
+              <b>Samuel Thomas</b>, Hammurabi Mendes<br>
+              <i>ACM Principles of Distributed Computing, 2019.</i>
+            </p>
+          </p>
+
+        </div>
+      </div>
+
+      <div id="Talks">
+        <center>Talks</center>
+        <p><a href="https://emerald-workshop.github.io/talks/slides/emerald2024-cxl-secure-mem_SamuelThmas.pdf">Invited Talk: Rethinking Secure NVM in the Age of CXL</a>, <i>EMERALD 2024</i></p>
+        <p><a href="/talks/williams-college-colloquium.pdf">Towards a Practical Secure Memory for Modern Deployments</a>, <i>Williams College Colloquium 2024</i></p>
+      </div>
+
+
+      <div id="teaching">
+        <center>
+          <h2>Teaching</h2>
+          <a href="/resources/teaching-certificate.pdf" style=color:purple;text-decoration:none;"">[Teaching Certificate]</a>
+        </center>
+
+        <!-- CSCI 1952y -->
+        <p>
+          <u>Computer Architecture <i>(CSCI 1952y, Brown University)</i>. Spring 2024.</u> Graduate TA.<br>
+          Co-design newly developed course (16 students). The course was simulator based (gem5), so I developed programming assignments covering caches, ISA extensions, and secure processors using this tool. I instructed several lectures and led assignment gear ups outside of class, in addition to typical TA responsibilities. <i><a href="/resources/evaluations/csci1952y-spring24.pdf">Teaching evaluation</a></i> (out of 5.0): mean 4.83 (std. = .45); median: 5.0.
+        </p>
+
+        <!-- CSCI 321 -->
+        <p>
+          <u>Computer Organization <i>(CSCI 341a, Colorado School of Mines)</i>. Summer 2024.</u> Adjunct faculty appointment.<br>
+          Developed first offering of summer architecture course (10 students). <i><a href="/resources/evaluations/csci341a-summer23.pdf">Teaching evaluation</a></i> (out of 5.0): mean 4.86 (std. = .7); median: 5.0.
+        </p>
+
+        <!-- CSCI 1760 -->
+        <p>
+          <u>Multiprocessor Synchronization <i>(CSCI 1760, Brown University)</i>. Fall 2023.</u> Graduate TA.<br>
+          <i><a href="/resources/evaluations/csci1760-fall23.pdf">Teaching evaluation</a></i> (out of 5.0): mean 4.5 (std. = .63); median: 5.0.
+        </p>
+
+        <!-- CSCI 1010 -->
+        <p>
+          <u>Theory of Computation<i>(CSCI 1010, Brown University)</i>. Fall 2021.</u> Graduate TA.<br>
+          <i><a href="/resources/evaluations/csci1010-fall21.pdf">Teaching evaluation</a></i> (out of 5.0): mean 4.5 (std. = .63); median: 5.0.
+        </p>
+
+      </div>
+
+
+      <div id="service">
+        <center><h2>Service</h2></center>
+        <div>
+          <i>Professional Service</i>
+          <ul>
+            <li>Reviewer (Artifact Evaluation), IISWC 2024.</li>
+            <li>External Reviewer, SSS 2024.</li>
+            <li>Reviewer (Artifact Evaluation), ISCA 2023.</li>
+          </ul>
+        </div>
+        <div>
+          <i>University Service</i>
+          <ul>
+            <li>TGIF czar (2022-2024)</li>
+            <li>Visit weekend organizer (2023, 2024)</li>
+            <li>Graduate Student Orientation czar 2022</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  
+
+
+
+  </body>
+
+
+</html>
